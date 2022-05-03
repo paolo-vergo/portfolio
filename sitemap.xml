@@ -13,11 +13,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://paolo-vergo.github.io/portfolio/post/project-2/</loc>
-    <lastmod>2021-02-10T11:00:59-04:00</lastmod>
+    <lastmod>2021-06-11T11:13:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://paolo-vergo.github.io/portfolio/post/project-3/</loc>
+    <lastmod>2021-02-10T11:00:59-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://paolo-vergo.github.io/portfolio/post/project-4/</loc>
     <lastmod>2020-12-11T11:13:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
