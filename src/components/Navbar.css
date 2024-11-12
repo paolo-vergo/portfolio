@@ -31,6 +31,8 @@ html {
   display: flex;
   gap: 25px;
   align-items: center;
+  font-weight: 500;
+
 }
 
 /* Hide nav-links by default on smaller screens */
@@ -53,9 +55,9 @@ html {
   text-decoration: none;
   color: #333;
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 500;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -103,7 +105,7 @@ html {
 .download-btn {
   background-color: #904f96;
   border: none;
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 10px 20px; /* Adjust padding to prevent deformation */
   color: white;
   font-size: 16px;

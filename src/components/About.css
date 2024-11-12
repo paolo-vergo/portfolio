@@ -10,7 +10,7 @@
 
 .about h2 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .about p {
@@ -31,7 +31,7 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: block; /* Makes sure image is centered */
   margin-left: auto;
   margin-right: auto;
