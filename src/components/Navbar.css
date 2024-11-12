@@ -65,7 +65,7 @@ html {
 
 /* Hover effect for nav buttons */
 .nav-btn:hover {
-  background-color: #904f96;
+  background-color: #d66fb4;
   color: white;
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -81,7 +81,7 @@ html {
 
 .social-icon:hover {
   transform: scale(1.2);
-  color: #904f96;
+  color: #d66fb4;
   text-shadow: 0 0 10px rgba(144, 79, 150, 0.7);
 }
 
@@ -103,12 +103,12 @@ html {
 
 /* Additional Styles for Download CV Button in Navbar */
 .download-btn {
-  background-color: #904f96;
+  background-color: #A259FF;
   border: none;
   border-radius: 20px;
   padding: 10px 20px; /* Adjust padding to prevent deformation */
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
