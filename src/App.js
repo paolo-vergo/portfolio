@@ -9,7 +9,7 @@ import { enable as enableDarkMode, disable as disableDarkMode, setFetchMethod } 
 import './App.css';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     // Allow `darkreader` to fetch styles correctly
