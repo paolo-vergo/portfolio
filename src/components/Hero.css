@@ -1,0 +1,75 @@
+/* Hero section */
+.hero {
+  background-image: url('../../public/abstract.jpg'); /* Set the image path */
+  background-size: cover;       /* Ensures the image covers the section without distorting */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  max-height: 92vh; /* Adjusts for the navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Ensure the positioning context for ::before */
+}
+
+/* Overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure the overlay covers the entire hero section */
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+/* Text above the overlay */
+.hero h3, .hero p {
+  position: relative;  /* Ensures text appears above the overlay */
+  z-index: 2;
+}
+
+.hero h3 {
+  font-size: 3.5em;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  transform: translateY(-10px); /* Shift text slightly upwards */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #fff;
+  transform: translateY(-5px); /* Shift paragraph slightly upwards */
+}
+
+
+
+/* Download CV Button */
+.view-projects-button {
+  margin-top: 150px; /* Increase the margin-top to move the button towards the bottom */
+  background-color: #904f96;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;  /* Ensures text appears above the overlay */
+  z-index: 3; /* Makes sure the button is above the overlay */
+}
+
+.view-projects-button:hover {
+  background-color: #d66fb4;
+  transform: scale(1.05); /* Slightly less scale */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background: #d66fb4; /* Gradient on hover */
+}

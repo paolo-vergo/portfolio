@@ -1,0 +1,170 @@
+/* ProjectModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+.modal-container {
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 65%;
+  max-height: 85%;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the close button */
+.close-btn {
+  display: none;
+}
+
+/* Title */
+.modal-container h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 2em;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+  text-align: center; /* Center align the tech stack subtitle */
+  justify-content: center;
+
+
+}
+
+.modal-container p {
+  text-align: left; /* Set text alignment to left */
+
+}
+
+/* Date */
+.project-date {
+  font-size: 0.9em;
+  color: #777;
+  font-style: italic;
+  margin-top: -30px;
+  margin-bottom: 15px; /* Add spacing after the date */
+  text-align: right;
+  font-weight: 700;
+}
+
+/* Tech Stack Subheading */
+.modal-container h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center; /* Center align the tech stack subtitle */
+}
+
+/* Tech Stack Content */
+.project-tech-stack {
+  font-size: 1em;
+  color: #444;
+  text-align: center; /* Center align the tech stack content */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Detailed Information Section */
+.detailed-info-section {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Subtitle for Detailed Info */
+.detailed-info-subtitle {
+  text-align: left; /* Align subtitle to the left */
+  text-transform: uppercase; /* Make subtitle uppercase */
+  font-weight: 700; /* Bold subtitle */
+  margin-bottom: 10px; /* Add space after subtitle */
+  color: #333; /* Subtitle color */
+}
+
+/* Detailed Information Content */
+.detailed-info-text {
+  margin-bottom: 15px; /* Add spacing between content */
+  text-align: left; /* Set text alignment to left */
+
+}
+
+/* Project Description */
+.description {
+  margin-top: 10px;
+  font-size: 1.13em;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: left; /* Ensure description text is left aligned */
+}
+
+
+
+
+/* Download CV Button */
+.github-button {
+  margin-top: 15px; /* Increase the margin-top to move the button towards the bottom */
+  max-width: 40%;
+  background-color: #904f96;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;  /* Ensures text appears above the overlay */
+  z-index: 3; /* Makes sure the button is above the overlay */
+  display: block; /* Make it a block element to center it */
+  margin: auto;
+
+}
+
+.github-button:hover {
+  background-color: #d66fb4;
+  transform: scale(1.05); /* Slightly less scale */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background: #d66fb4; /* Gradient on hover */
+}
+
+
+
+
+
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .modal-container {
+    width: 95%;
+    padding: 20px;
+  }
+}
