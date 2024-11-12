@@ -109,6 +109,13 @@
 
 }
 
+/* Detailed Information Content */
+.detailed-info-list {
+  margin-bottom: 15px; /* Add spacing between content */
+  text-align: left; /* Set text alignment to left */
+  margin-left:10px;
+
+}
 /* Project Description */
 .description {
   margin-top: 10px;

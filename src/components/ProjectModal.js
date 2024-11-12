@@ -39,7 +39,20 @@ const ProjectModal = ({ title, description, techStack, githubLink, detailedInfo,
         {detailedInfo && Object.entries(detailedInfo).map(([subtitle, content], index) => (
           <div key={index} className="detailed-info-section">
             <div className="detailed-info-subtitle">{subtitle}</div>
-            <div className="detailed-info-text">{content}</div>
+
+            {/* Check if content is an array or string, then render accordingly */}
+            {Array.isArray(content) ? (
+              <ul className="detailed-info-list">
+                {content.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <div
+                className="detailed-info-text"
+                dangerouslySetInnerHTML={{ __html: content }} // Renders HTML content
+              />
+            )}
           </div>
         ))}
 

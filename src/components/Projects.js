@@ -10,6 +10,18 @@ function Projects() {
   const [currentProject, setCurrentProject] = useState(null);
 
   const projects = [
+      {
+      title: "Conversational Data Analytics",
+      description: "A powerful tool enabling government personnel to query structured data via a conversational chatbot, providing secure and insightful responses without SQL expertise.",
+      techStack: ["Python", "Neo4j", "Kafka", "MongoDB", "Impala", "React", "LLMs (GPT-4o)"],
+      date: "2022 - 2024",
+      detailedInfo: {
+        "Project Overview": "This project is a conversational analytics platform designed to enable government users to query databases through a chatbot interface using natural language. Over two years, I contributed to its development in various roles, initially as a Machine Learning Engineer and later as both Project Manager and Senior ML Engineer, guiding its growth and implementation. The platform integrates LLMs to interpret queries, making data insights easily accessible to non-technical users.",
+        "Key Features": "The frontend conversational chatbot allows users to select datasets, type or voice questions, and view suggestions for queries. Through a digital assistant, it can deliver responses both visually and verbally. The system supports context-driven insights by using metadata-based graphs and provides enhanced responses based on user intent and context.",
+        "Techniques Used": "Natural Language Understanding with LLMs for query interpretation, metadata-driven graph exploration for relevant insights, secure data handling, and dynamic SQL query generation. Frontend enhancements include real-time response handling and a digital assistant for accessible, multimodal feedback.",
+        "Outcome": "This platform democratizes data access for government personnel, facilitating data-driven decision-making without requiring SQL or technical knowledge. It has advanced data accessibility while upholding data privacy and security standards, and its LLM-powered interface has improved user satisfaction through intuitive interactions."
+      }
+    },
     {
       title: 'Fault Prediction',
       description: 'Monitoring the state of government applications, predicting service health metrics using ML methods, and providing advanced alerts.',
@@ -93,7 +105,7 @@ function Projects() {
       description: 'Hierarchical Nonparametric Bayesian Models for smoothing functional data.',
       techStack: ['C++', 'Bayesian Statistics', 'Dirichlet Mixture Model', 'Gibbs Sampler'],
       githubLink: 'https://github.com/paolo-vergo/npbayes',
-      date: "December, 2020",
+      date: "December 2020",
       detailedInfo: {
         "Project Overview": "Welcome to the Hierarchical Nonparametric Bayesian Models for Smooth Functional Data project! This repository contains an implementation of a CPP Gibbs Sampler for a Hierarchical Dirichlet Mixture Model. It was developed as part of the Bayesian Statistics course at PoliMi in 2021, with special thanks to Prof. Raffaele Argiento for his guidance.",
         "Objective": "The goal of this project is to address the task of functional smoothing for grouped data. Specifically, we focus on estimating the step functional component of sport performance data using hierarchical nonparametric Bayesian models. By leveraging the power of Bayesian statistics and nonparametric modeling, we aim to effectively smooth the data and extract meaningful insights.",
