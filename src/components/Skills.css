@@ -1,40 +1,37 @@
 /* Skills Section */
 .skills {
-  padding: 60px 50px;  /* Add vertical padding and smaller horizontal padding */
+  padding: 60px 40px;
   background-color: #f0f0f5;
   color: #333;
 }
 
-
-
 .skills h2 {
   font-size: 2.5em;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
-
 
 /* Category Filter */
 .category-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  padding: 0 40px;  /* Horizontal padding reduced to avoid overflow */
-  flex-wrap: wrap;  /* Allow buttons to wrap to the next line */
-  gap: 12px;  /* Added gap between buttons */
+  margin-bottom: 25px;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .category-filter button {
   background-color: #e0e0e5;
   border: 1px solid #ccc;
-  padding: 10px 22px;
+  padding: 8px 18px;
   cursor: pointer;
-  font-size: 1.0em;
+  font-size: 0.95em;
   font-weight: 500;
-  border-radius: 20px;
+  border-radius: 18px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  max-width: 180px;  /* Set a max width for buttons to prevent overflow */
-  white-space: nowrap;  /* Prevent button text from wrapping */
-  color:black;
+  max-width: 160px;
+  white-space: nowrap;
+  color: black;
 }
 
 .category-filter button.active {
@@ -52,11 +49,11 @@
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusted for denser layout */
+  gap: 20px;  /* Reduced gap for a denser layout */
   justify-items: center;
-  padding: 0 60px;  /* Horizontal padding added here */
-  margin-top: 20px;
+  padding: 0 40px;
+  margin-top: 15px;
 }
 
 /* Skill Cards */
@@ -64,49 +61,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  min-width: 140px;
+  min-height: 180px;
+  padding: 15px;  /* Reduced padding for a compact layout */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon */
 .skill-card .icon {
-  font-size: 3em;
-  margin-bottom: 15px;
+  font-size: 2.5em;  /* Reduced icon size for compact look */
+  margin-bottom: 10px;
 }
 
 /* Skill name */
 .skill-card p {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 500;
   color: #444;
-  margin-top: 10px;
+  margin-top: 8px;
   text-transform: capitalize;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-grid {
-    gap: 20px;
-    padding: 0 20px; /* Padding reduced for smaller screens */
+    gap: 15px;
+    padding: 0 20px;
   }
 
   .skill-card {
-    padding: 20px;
-    max-width: 200px;
+    padding: 15px;
+    min-width: 120px;
+    min-height: 160px;
   }
 
   .category-filter button {
-    padding: 10px 18px;
-    font-size: 1em;
+    padding: 8px 15px;
+    font-size: 0.9em;
   }
 }
 
@@ -116,7 +117,7 @@
   }
 
   .category-filter button {
-    padding: 10px 15px;
-    font-size: 0.95em;
+    padding: 8px 12px;
+    font-size: 0.85em;
   }
 }
