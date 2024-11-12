@@ -85,6 +85,19 @@ html {
   text-shadow: 0 0 10px rgba(144, 79, 150, 0.7);
 }
 
+.dark-mode-toggle {
+margin-top:6px;
+    transition: all 0.3s ease;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.dark-mode-toggle:hover {
+transform: scale(1.2);
+  color: #d66fb4;
+  text-shadow: 0 0 10px rgba(144, 79, 150, 0.7);}
+
+
 /* Display menu toggle button only on mobile */
 .menu-toggle {
   display: none;

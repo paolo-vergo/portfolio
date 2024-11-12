@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { FaLinkedin, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import Button from './Button';
+import { enable as enableDarkMode, disable as disableDarkMode, setFetchMethod } from 'darkreader';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    setFetchMethod(window.fetch); // Ensures darkreader fetches styles correctly
+
+    if (isDarkMode) {
+      enableDarkMode({
+        brightness: 100,
+        contrast: 90,
+        sepia: 10,
+      });
+    } else {
+      disableDarkMode();
+    }
+  }, [isDarkMode]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +28,10 @@ function Navbar() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
@@ -38,6 +58,15 @@ function Navbar() {
             <FaGithub size={30} className="social-icon" />
           </a>
         </li>
+
+        {/* Dark Mode Toggle Button with Icons */}
+        <li>
+          <button onClick={toggleDarkMode} className="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            {isDarkMode ? <FaSun size={30} /> : <FaMoon size={30} />}
+          </button>
+        </li>
+
+        {/* Download CV Button */}
         <li>
           <Button
             href="https://raw.githubusercontent.com/paolo-vergo/resume/main/docs/paolo_vergottini_cv.pdf"

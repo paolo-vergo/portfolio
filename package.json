@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://paolo-vergo.github.io/portfolio",
   "dependencies": {
+    "darkreader": "^4.9.96",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
