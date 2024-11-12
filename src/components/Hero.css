@@ -72,4 +72,6 @@
   transform: scale(1.05); /* Slightly less scale */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
   background: #d66fb4; /* Gradient on hover */
+  color: white; /* Text color remains white */
+  text-decoration: none; /* No underline */
 }

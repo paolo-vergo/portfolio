@@ -34,6 +34,7 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
   max-width: 180px;  /* Set a max width for buttons to prevent overflow */
   white-space: nowrap;  /* Prevent button text from wrapping */
+  color:black;
 }
 
 .category-filter button.active {

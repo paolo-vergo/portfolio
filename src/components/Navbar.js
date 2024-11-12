@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { FaLinkedin, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
+import Button from './Button';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,6 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close the menu when clicking a link
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -17,8 +17,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <h1>Paolo Vergottini</h1>
-      
-      {/* Toggle Button */}
+
+      {/* Menu Toggle Button for Mobile */}
       <button className="menu-toggle" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </button>
@@ -39,15 +39,16 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <button 
-            className="download-btn" 
-            onClick={() => {
-              window.location.href = "https://raw.githubusercontent.com/paolo-vergo/resume/main/docs/paolo_vergottini_cv.pdf";
-              closeMenu();
-            }}
+          <Button
+            href="https://raw.githubusercontent.com/paolo-vergo/resume/main/docs/paolo_vergottini_cv.pdf"
+            className="download-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            ariaLabel="Download CV"
+            onClick={closeMenu}
           >
             Download CV
-          </button>
+          </Button>
         </li>
       </ul>
     </nav>

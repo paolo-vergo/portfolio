@@ -33,12 +33,19 @@ html {
   align-items: center;
 }
 
-.nav-links.active {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
+/* Hide nav-links by default on smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
 }
 
 /* Individual nav buttons */
@@ -76,50 +83,40 @@ html {
   text-shadow: 0 0 10px rgba(144, 79, 150, 0.7);
 }
 
-/* Download CV Button */
+/* Display menu toggle button only on mobile */
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Additional Styles for Download CV Button in Navbar */
 .download-btn {
   background-color: #904f96;
   border: none;
   border-radius: 12px;
-  padding: 12px 25px;
+  padding: 10px 20px; /* Adjust padding to prevent deformation */
   color: white;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: inline-block; /* Ensures button doesn't stretch */
+  text-align: center; /* Centers text */
 }
 
 .download-btn:hover {
   background-color: #d66fb4;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Toggle button for mobile */
-.menu-toggle {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: #333;
-  border: none;
-  background: none;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none; /* Hide nav links initially on mobile */
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .nav-links.active {
-    display: flex; /* Show nav links on toggle */
-  }
-
-  /* Make menu toggle button visible on mobile */
-  .menu-toggle {
-    display: block;
-  }
-}
+  color: white; /* Text color remains white */
+  text-decoration: none; /* No underline */}
