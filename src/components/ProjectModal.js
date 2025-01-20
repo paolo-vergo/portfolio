@@ -60,7 +60,7 @@ const ProjectModal = ({ title, description, techStack, githubLink, detailedInfo,
 
         {/* Conditionally render the GitHub button if githubLink exists */}
         {githubLink && (
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-button">GitHub Repository</a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-button">GitHub</a>
         )}
       </div>
     </div>

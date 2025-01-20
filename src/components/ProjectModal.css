@@ -35,13 +35,13 @@
 .modal-container h2 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   color: #222;
   line-height: 1.2;
   text-align: center; /* Center align the tech stack subtitle */
   justify-content: center;
-
+  word-wrap: break-word;
 
 }
 
@@ -127,25 +127,24 @@
 
 
 
-
 /* Download CV Button */
 .github-button {
   margin-top: 15px; /* Increase the margin-top to move the button towards the bottom */
-  max-width: 40%;
+  max-width: 40%; /* Allow full width on smaller screens */
   background-color: #904f96;
   border: none;
   border-radius: 20px;
-  padding: 15px 25px;
+  padding: 15px 20px; /* Adjust padding for better responsiveness */
   color: white;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  position: relative;  /* Ensures text appears above the overlay */
+  position: relative; /* Ensures text appears above the overlay */
   z-index: 3; /* Makes sure the button is above the overlay */
   display: block; /* Make it a block element to center it */
-  margin: auto;
-
+  margin: auto; /* Centers the button horizontally */
+  text-align: center; /* Centers the text inside the button */
 }
 
 .github-button:hover {
@@ -155,9 +154,24 @@
   background: #d66fb4; /* Gradient on hover */
 }
 
+/* Optional: Media query for smartphones */
+@media (max-width: 768px) {
+  .github-button {
+    max-width: 90%; /* Allow more room for text on smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .modal-container h2 {
+    font-size: 1.3rem; /* Reduce font size for smaller screens */
+    line-height: 1.2; /* Adjust line height to ensure readability */
+  }
 
+  .modal-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+    max-width: 90%;
 
+  }
 
+}
 
 
 /* Animation */

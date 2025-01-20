@@ -11,7 +11,7 @@ function Projects() {
 
   const projects = [
       {
-      title: "Conversational Data Analytics",
+      title: "Data Analytics Converser",
       description: "A powerful tool enabling government personnel to query structured data via a conversational chatbot, providing secure and insightful responses without SQL expertise.",
       techStack: ["Python", "Neo4j", "Kafka", "MongoDB", "Impala", "React", "LLMs (GPT-4o)"],
       date: "2022 - 2024",
@@ -101,7 +101,7 @@ function Projects() {
       }
     },
     {
-      title: 'Bayesian Nonparametric Approach',
+      title: 'Bayesian Non-parametric Smoother',
       description: 'Hierarchical Nonparametric Bayesian Models for smoothing functional data.',
       techStack: ['C++', 'Bayesian Statistics', 'Dirichlet Mixture Model', 'Gibbs Sampler'],
       githubLink: 'https://github.com/paolo-vergo/npbayes',
