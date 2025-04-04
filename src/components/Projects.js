@@ -10,7 +10,31 @@ function Projects() {
   const [currentProject, setCurrentProject] = useState(null);
 
   const projects = [
-      {
+    {
+      title: 'Smart Identity Verification with Face Recognition',
+      description: "A face recognition system for verifying citizen identity through NFC ID scanning, anti-spoofing, and biometric matching.",
+      techStack: ["Python", "NFC", "FaceNet", "React"],
+      date: "March 2025",
+      detailedInfo: {
+        "Project Overview": "This project implements a biometric authentication system for verifying a citizen's identity using their NFC-enabled ID card. The system reads personal data and photo from the ID, prompts the user to record a short video, and then verifies the match between the ID photo and live video using face recognition techniques.",
+        "Key Features": "NFC-based ID scanning, automatic photo extraction, real-time video capture for anti-spoofing and liveness detection, and face matching algorithms.",
+        "Techniques Used": "Face detection and alignment with MediaPipe, feature extraction with FaceNet, anti-spoofing measures using eye blink and movement detection, and NFC communication protocols.",
+        "Outcome": "The system streamlines and secures the process of digital identity verification for government and public service applications."
+      }
+    },
+    {
+      title: 'Text-to-Italian Sign Language Generator',
+      description: "A translator that converts Italian text to Italian Sign Language (LIS) using LLMs and diffusion models for gesture rendering.",
+      techStack: ["Python", "Transformers", "Diffusion Models", "LIS", "React"],
+      date: "2025",
+      detailedInfo: {
+        "Project Overview": "This tool enables seamless translation of Italian text into Italian Sign Language (LIS) videos. It uses a large language model to perform syntax transformation from Italian to LIS structure, followed by a gesture generation module powered by diffusion models to create realistic avatar signing.",
+        "Key Features": "Automatic Italian-to-LIS translation, realistic avatar animation using generative models, and accessibility-first design.",
+        "Techniques Used": "Prompt engineering for LIS syntax generation, sequence-to-sequence modeling, and diffusion-based video generation for gesture sequences.",
+        "Outcome": "The tool significantly enhances digital accessibility for the Deaf community by automating the generation of LIS content from textual input."
+      }
+    },
+    {
       title: "Data Analytics Converser",
       description: "A powerful tool enabling government personnel to query structured data via a conversational chatbot, providing secure and insightful responses without SQL expertise.",
       techStack: ["Python", "Neo4j", "Kafka", "MongoDB", "Impala", "React", "LLMs (GPT-4o)"],

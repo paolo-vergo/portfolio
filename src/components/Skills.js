@@ -4,11 +4,12 @@ import { MdScatterPlot} from 'react-icons/md';
 import {IoPieChartSharp} from 'react-icons/io5'
 import { FaM } from "react-icons/fa6";
 import { FaStarOfLife } from "react-icons/fa6";
-import { SiR, SiCplusplus, SiGnubash, SiDocker, SiStackblitz, SiPostman, SiMongodb,SiMeta, SiGithub, SiGitlab, SiFastapi, SiApachekafka, SiHive, SiHuggingface, SiLangchain, SiNeo4J, SiNextra, SiMicrosoftexcel, SiKubernetes, SiTensorflow, SiPytorch, SiScikitlearn, SiReact, SiFlask, SiStreamlit, SiPostgresql, SiGooglegemini, SiSpacy, SiPlotly, SiPandas, SiNumpy, SiSwagger } from 'react-icons/si';
+import { SiR, SiCplusplus, SiC, SiGnubash, SiDocker, SiStackblitz, SiJavascript, SiPostman, SiMongodb, SiMeta, SiGithub, SiGitlab, SiFastapi, SiApachekafka, SiHive, SiHuggingface, SiLangchain, SiNeo4J, SiNextra, SiMicrosoftexcel, SiKubernetes, SiTensorflow, SiPytorch, SiScikitlearn, SiReact, SiFlask, SiStreamlit, SiPostgresql, SiGooglegemini, SiSpacy, SiPlotly, SiPandas, SiNumpy, SiSwagger, SiApachehadoop } from 'react-icons/si';
 import './Skills.css';
 import { FaQ } from "react-icons/fa6";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { GrTools } from "react-icons/gr";
+
 
 
 
@@ -17,8 +18,10 @@ function Skills() {
     // Languages
     { name: 'Python', icon: <FaPython />, category: 'Languages' },
     { name: 'Java', icon: <FaJava />, category: 'Languages' },
+    { name: 'JavaScript', icon: <SiJavascript />, category: 'Languages' },
     { name: 'R', icon: <SiR />, category: 'Languages' },
     { name: 'C++', icon: <SiCplusplus />, category: 'Languages' },
+    { name: 'C', icon: <SiC />, category: 'Languages' },
     { name: 'Bash', icon: <SiGnubash />, category: 'Languages' },
 
     // Version Control
@@ -52,6 +55,7 @@ function Skills() {
     { name: 'TensorFlow', icon: <SiTensorflow />, category: 'Machine Learning' },
     { name: 'PyTorch', icon: <SiPytorch />, category: 'Machine Learning' },
     { name: 'Scikit-learn', icon: <SiScikitlearn />, category: 'Machine Learning' },
+    { name: 'Mediapipe', icon: <SiPlotly />, category: 'Machine Learning' },
 
     // Data Visualization
     { name: 'Matplotlib', icon: <MdScatterPlot />, category: 'Data Visualization' },
@@ -67,6 +71,7 @@ function Skills() {
     { name: 'Spark', icon: <SiStackblitz />, category: 'Big Data' },
     { name: 'Kafka', icon: <SiApachekafka />, category: 'Big Data' },
     { name: 'Hive', icon: <SiHive />, category: 'Big Data' },
+    { name: 'HDFS', icon: <SiApachehadoop />, category: 'Big Data' },
 
     // Data Tools
     { name: 'Matlab', icon: <SiNextra />, category: 'Data Tools' },
@@ -78,6 +83,7 @@ function Skills() {
     { name: 'FastApi', icon: <SiFastapi />, category: 'API' },
     { name: 'Postman', icon: <SiPostman />, category: 'API' },
     { name: 'Swagger', icon: <SiSwagger />, category: 'API' },
+
 ];
 
 
